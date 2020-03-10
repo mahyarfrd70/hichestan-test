@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+}
+
+.App {
+  padding: 10px;
+  height: calc(100vh - 53px);
+  overflow: auto;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin:unset
+}
+
+.filter-box-btn{
+  direction: ltr;
+  padding: 15px 15px 0 15px;
+}
+.filter-box{
+  position: fixed;
+  background-color: #f9fafb;
+  top:0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  box-sizing: border-box;
+  .header-title{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    h4{
+      margin-right: 8px;
+    }
+  }
+  .filter-form{
+    padding: 15px;
+    height: calc(100% - 124px);
+  }
+  .filter-btn{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    button{
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
